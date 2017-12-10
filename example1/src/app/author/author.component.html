@@ -1,0 +1,13 @@
+<div class="container ">
+  <div class="row" [style.backgroundColor]="isActive ? blue : green">
+
+    <h2>List Authors</h2>
+    <input [(ngModel)] ="email" />
+    <button class="btn btn-success" [class.active]="isActive">Save</button>
+    <ul>
+      <li *ngFor="let a of listAuthors">
+        {{a}}
+      </li>
+    </ul>
+  </div>
+</div>
